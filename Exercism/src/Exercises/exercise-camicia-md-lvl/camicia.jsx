@@ -1,96 +1,129 @@
+
 const Camicia = () => {
-  const solveExercise= (player1, player2) => {
-     const center = [];
-      const penaltyCards = { j: 1, q: 2, k: 3, a: 4 };
-      const lengths = Math.floor(player1.length + player2.length);
-      const cards1 = [...player1];
-      const cards2 = [...player2];
-     let status = "finished";
-      let counterTakeCenter = 0;
-      let counterUseCards = 0;
+ 
+  const simulateGame = (cards1, cards2) => {
+  const decks = [[...cards1], [...cards2]];
 
-      for (let i = 0; i < lengths; i++) {
-        if (player1[i] != null) {
-          center.push(player1[i]);
-          cards1[i] = "";
-          counterUseCards++;
+  const penaltyCards = {
+    J: 1,
+    Q: 2,
+    K: 3,
+    A: 4,
+  };
 
-          const findeIndexPenaltyCardPlayer2 = player2.indexOf(
-            player2[player1.indexOf(player1[i])],
-          );
+  const pile = [];
+  const seen = new Set();
 
-          const PenaltyCardsInPlayer2 = player2.filter(
-            (item, index) =>
-              index < penaltyCards[player1[i]] + findeIndexPenaltyCardPlayer2 &&
-              index >= findeIndexPenaltyCardPlayer2,
-          );
+  let turn = 0; // 0 => player A, 1 => player B
+  let cards = 0;
+  let tricks = 0;
 
-          if (/[j,q,k,a]/g.test(PenaltyCardsInPlayer2.join(" "))) {
-            console.log(true);
-          } else if (PenaltyCardsInPlayer2.length >= 1) {
-            console.log(PenaltyCardsInPlayer2);
-            console.log(`it is center ${center}`);
-            cards2.push(...center, PenaltyCardsInPlayer2);
-            counterTakeCenter++;
-            center.length = 0;
-          }
-          if (
-            cards1.every((item) => item === "") &&
-            !cards2.every((item) => item === "")
-          ) {
-            cards2.push(...center);
-            center.length = 0;
-            counterTakeCenter++;
-          }
+  let penalty = 0;
+  let collector = null;
+
+  const normalize = (deck) =>
+    deck
+      .map((card) => (penaltyCards[card] ? card : "#"))
+      .join("");
+
+    while (true) {
+      if (penalty === 0 && pile.length === 0) {
+        const state =
+          normalize(decks[0]) +
+          "|" +
+          normalize(decks[1]) +
+          "|" +
+          turn +
+          "|" +
+          penalty;
+
+        if (seen.has(state)) {
+          return {
+            status: "loop",
+            cards,
+            tricks,
+          };
         }
-        if (player2[i] != null) {
-          center.push(player2[i]);
-          cards2[i] = "";
-          counterUseCards++;
-
-          const findeIndexPenaltyCardPlayer1 = player1.indexOf(
-            player1[player2.indexOf(player2[i])],
-          );
-
-          const PenaltyCardsInPlayer1 = player1.filter(
-            (item, index) =>
-              index < penaltyCards[player2[i]] + findeIndexPenaltyCardPlayer1 &&
-              index >= findeIndexPenaltyCardPlayer1,
-          );
-
-          if (/[j,q,k,a]/g.test(PenaltyCardsInPlayer1.join(" "))) {
-            console.log(true);
-          } else if (PenaltyCardsInPlayer1.length >= 1) {
-            cards1.push(...center, PenaltyCardsInPlayer1);
-            counterTakeCenter++;
-            center.length = 0;
-          }
-          if (
-            cards2.every((item) => item === "") &&
-            !cards1.every((item) => item === "")
-          ) {
-            cards1.push(...center);
-            center.length = 0;
-            counterTakeCenter++;
-          }
-        }
+        seen.add(state);
       }
-      console.log(`CARD1: ${cards1}`);
-      console.log(`CARD2: ${cards2}`);
-    console.log(`CENTER: ${center}`);
 
+    const current = decks[turn];
+    const opponent = decks[1 - turn];
+
+    // بازیکن کارت ندارد
+    if (current.length === 0) {
+      if (pile.length) {
+        opponent.push(...pile);
+        pile.length = 0;
+        tricks++;
+      }
 
       return {
-        status: status,
-        cards: counterUseCards,
-        tricks: counterTakeCenter,
+        status: "finished",
+        cards,
+        tricks,
       };
+    }
+
+    const card = current.shift();
+
+    pile.push(card);
+    cards++;
+
+    // کارت جریمه
+    if (penaltyCards[card]) {
+      penalty = penaltyCards[card];
+      collector = turn;
+      turn = 1 - turn;
+      continue;
+    }
+
+    // در حال پرداخت جریمه هستیم
+    if (penalty > 0) {
+      penalty--;
+
+      if (penalty === 0) {
+        decks[collector].push(...pile);
+        pile.length = 0;
+
+        tricks++;
+
+        if (
+          decks[collector].length ===
+          decks[0].length + decks[1].length
+        ) {
+          return {
+            status: "finished",
+            cards,
+            tricks,
+          };
+        }
+
+        turn = collector;
+      }
+
+      continue;
+    }
+
+    turn = 1 - turn;
   }
+};
 
-
+ const playerA = [
+      '2', '8', '4', 'K', '5', '2', '3', 'Q', '6', 'K',
+      'Q', 'A', 'J', '3', '5', '9', '8', '3', 'A', 'A',
+      'J', '4', '4', 'J', '7', '5',
+    ];
+    const playerB = [
+      '7', '7', '8', '6', '10', '10', '6', '10', '7', '2',
+      'Q', '6', '3', '2', '4', 'K', 'Q', '10', 'J', '5',
+      '9', '8', '9', '9', 'K', 'A',
+    ];
   return (
-    <div onClick={()=>solveExercise(["2", "4", "2", "2", "2", "2", "2"], ["3", "5", "6"])} style={{width:"100%",height:"100vh",backgroundColor:"#0c0c0c"}}>
+    <div onClick={() => console.log(simulateGame(playerA, playerB))} style={{ width: "100%", height: "100vh", backgroundColor: "#0c0c0c", color: "#fff", textAlign: "center", fontSize: "2rem", borderRadius: "1rem" }}>
+     
+      test me if you want 
     </div>
   )
 }
-export default Camicia
+export default Camicia;

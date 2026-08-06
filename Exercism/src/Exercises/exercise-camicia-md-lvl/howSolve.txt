@@ -1,0 +1,118 @@
+شروع
+
+مرحله ۱: داده‌ها را آماده کن
+
+playerA = ['2', 'A', '7']
+playerB = ['3', '4', 'J']
+
+۱.۱:کپی می‌گیریم: const decks = [[...playerA], [...playerB]];
+
+۲:کارت‌های جریمه
+
+const penaltyCards = {
+  J: 1,
+  Q: 2,
+  K: 3,
+  A: 4
+};
+
+۳:متغیرهای بازی
+const pile = [];
+
+let turn = 0; 0=>A 1=>B
+let cards = 0; چند کارت بازی شده 
+let tricks = 0; چند بار pile جمع شده؟
+
+let penalty = 0
+let collector = null; چه کسی آخرین کارت جریمه را گذاشته؟
+
+۴:حلقه اصلی
+
+while(true){
+
+}
+
+۵:آیا بازیکن کارت دارد؟
+
+const current = decks[turn]; 
+current.length === 0 => یعنی ندارد 
+
+۶:بازی کردن یک کارت
+کارت بالایی:
+const card = current.shift();
+
+داخل pile:
+pile.push(card);
+
+یک کارت بازی شد:
+cards++
+
+۷:آیا کارت جریمه است؟
+card = "K"
+
+۷.۱:چک می‌کنیم: if (penaltyCards[card])
+
+۷.۲:اگر بود
+penalty = 3;
+collector = turn;
+
+۷.۳نوبت عوض می‌شود:turn = 1 - turn;
+
+۸:پرداخت جریمه
+فرض کن:
+A => K
+
+الان:
+penalty = 3
+
+۸.۱:B باید کارت رو کند.
+مثلاً:
+5
+
+۸.۲:عدد است پس
+penalty--;
+
+۹:جریمه تمام شد
+مثلاً:
+A => K
+
+B => 5
+B => 7
+B => 2
+
+پس:
+
+decks[collector].push(...pile);
+
+Pile خالی می‌شود:
+
+pile.length = 0;
+
+یک Trick:
+
+tricks++;
+
+۱۰:برنده Round شروع می‌کند
+
+همان کسی که pile را گرفته:
+turn = collector;
+
+۱۱:تشخیص Loop
+
+۱۱.۱:اید وضعیت Round ها را ذخیره کنیم.
+
+const seen = new Set();
+
+۱۱.۲:بل از شروع هر Round:
+
+const state = ...
+
+۱۱.۳:اگر قبلاً دیده شده بود:
+
+seen.has(state)
+
+۱۱.۴:یعنی:
+
+status = "loop";
+
+پایان
