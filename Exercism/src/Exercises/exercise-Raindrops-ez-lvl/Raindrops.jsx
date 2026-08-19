@@ -1,6 +1,4 @@
-
 const Raindrops = () => {
-    
     const raindrops = (num) => {
         const array = [];
         const object = {

@@ -4,6 +4,18 @@ const App = () => {
   const navigate=useNavigate()
   return <div>
     <button onClick={()=>navigate("Camicia")}>Camicia exercise mid</button>
+    <button onClick={() => navigate("Meetup")}>Meetup exercise mid</button>
+    <button onClick={() => navigate("Etl")}>exercise ETL ez lvl</button>
+    <button onClick={() => navigate("Hamming")}>exercise Hamming ez lvl</button>
+<button onClick={() => navigate("Raindrops")}>exercise Raindrops ez lvl</button>
+    <br />
+    <button onClick={() => navigate("Nucleotide_count")}>exercise Nucleotide_count mid lvl</button>
+    <button onClick={() => navigate("Scrabble_Score")}>exercise Scrabble_Score mid lvl</button>
+    <button onClick={() => navigate("Word_Count")}>exercise Word_Count mid lvl</button>
+     <button onClick={() => navigate("Bank_Account")}>exercise Bank_Account ez lvl</button>
+    <button onClick={() => navigate("Difference_of_Squares")}>exercise Difference_of_Squares ez lvl</button>
+    <button onClick={() => navigate("Perfect_Numbers")}>exercise Perfect_Numbers ez lvl</button>
+    
   </div>
 }
 

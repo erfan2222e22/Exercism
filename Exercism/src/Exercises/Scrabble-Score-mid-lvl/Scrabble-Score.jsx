@@ -1,5 +1,5 @@
-
 const Scrabble_Score = () => {
+
     const scrabble_Score = (input) => {
         const string = input.toUpperCase()
         let counter = 0;

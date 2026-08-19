@@ -1,4 +1,3 @@
-
 const Hamming = () => {
 
     const hamming = (string1, string2) => {

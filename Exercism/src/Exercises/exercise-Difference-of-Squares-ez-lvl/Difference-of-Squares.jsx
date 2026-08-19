@@ -29,9 +29,12 @@ const Difference_of_Squares = () => {
 
         get difference() {
             let res = 0;
-            return this.squareOfSum >= this.sumOfSquares ? res = this.squareOfSum - this.sumOfSquares
-                : res = this.sumOfSquares - this.squareOfSum;
-            
+            if (this.squareOfSum >= this.sumOfSquares) {
+                 res = this.squareOfSum - this.sumOfSquares
+            } else {
+                res = this.sumOfSquares - this.squareOfSum;
+            }
+            return res
         }
     }
 

@@ -1,4 +1,3 @@
-
 const Camicia = () => {
  
   const simulateGame = (cards1, cards2) => {
@@ -118,7 +117,8 @@ const Camicia = () => {
       '7', '7', '8', '6', '10', '10', '6', '10', '7', '2',
       'Q', '6', '3', '2', '4', 'K', 'Q', '10', 'J', '5',
       '9', '8', '9', '9', 'K', 'A',
-    ];
+  ];
+  
   return (
     <div onClick={() => console.log(simulateGame(playerA, playerB))} style={{ width: "100%", height: "100vh", backgroundColor: "#0c0c0c", color: "#fff", textAlign: "center", fontSize: "2rem", borderRadius: "1rem" }}>
      

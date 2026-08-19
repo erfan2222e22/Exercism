@@ -1,6 +1,5 @@
-
-
 const Nucleotide_count = () => {
+    
     const nucleotide_count = (string) => {
     
         const Condition = string.split("");
