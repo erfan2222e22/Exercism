@@ -15,6 +15,8 @@ const App = () => {
      <button onClick={() => navigate("Bank_Account")}>exercise Bank_Account ez lvl</button>
     <button onClick={() => navigate("Difference_of_Squares")}>exercise Difference_of_Squares ez lvl</button>
     <button onClick={() => navigate("Perfect_Numbers")}>exercise Perfect_Numbers ez lvl</button>
+    <button onClick={() => navigate("Luhn")}>exercise Luhn mid lvl</button>
+     <button onClick={() => navigate("Prime_Factors")}>exercise Prime_Factors mid lvl</button>
     
   </div>
 }

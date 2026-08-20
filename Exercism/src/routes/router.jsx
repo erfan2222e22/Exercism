@@ -12,6 +12,7 @@ import Perfect_Numbers from "../Exercises/execise-Perfect-Numbers-ez-lvl/Perfect
 import Luhn from "../Exercises/exsercise-Luhn-mid-lvl/Luhn.jsx";
 import App from "../App.jsx"
 import { createBrowserRouter } from "react-router-dom";
+import Prime_Factors from "../Exercises/exercisr-Prime-Factors-mid-lvl/Prime-Factors.jsx";
 let routs = createBrowserRouter([
     {
         path: "/",
@@ -67,7 +68,11 @@ let routs = createBrowserRouter([
             {
                 path: "Luhn",
                 element:<Luhn></Luhn>
-            }
+            },
+             {
+                path: "Prime_Factors",
+                element:<Prime_Factors></Prime_Factors>
+            },
         ]
     }
 ])
