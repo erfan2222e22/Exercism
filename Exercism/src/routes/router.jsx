@@ -10,9 +10,10 @@ import Bank_Account from "../Exercises/exercise-Bank-Account-ez-lvl/Bank-Account
 import Difference_of_Squares from "../Exercises/exercise-Difference-of-Squares-ez-lvl/Difference-of-Squares.jsx";
 import Perfect_Numbers from "../Exercises/execise-Perfect-Numbers-ez-lvl/Perfect-Numbers.jsx";
 import Luhn from "../Exercises/exsercise-Luhn-mid-lvl/Luhn.jsx";
+import Prime_Factors from "../Exercises/exercisr-Prime-Factors-mid-lvl/Prime-Factors.jsx";
+import Grains from "../Exercises/exercise-Grains-mid-lvl/Grains.jsx";
 import App from "../App.jsx"
 import { createBrowserRouter } from "react-router-dom";
-import Prime_Factors from "../Exercises/exercisr-Prime-Factors-mid-lvl/Prime-Factors.jsx";
 let routs = createBrowserRouter([
     {
         path: "/",
@@ -72,6 +73,10 @@ let routs = createBrowserRouter([
              {
                 path: "Prime_Factors",
                 element:<Prime_Factors></Prime_Factors>
+            },
+                  {
+                path: "Grains",
+                element:<Grains></Grains>
             },
         ]
     }
