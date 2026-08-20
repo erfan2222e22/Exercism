@@ -9,6 +9,7 @@ import Word_Count from "../Exercises/exercise-word-Count-mid-lvl/Word-Count.jsx"
 import Bank_Account from "../Exercises/exercise-Bank-Account-ez-lvl/Bank-Account.jsx";
 import Difference_of_Squares from "../Exercises/exercise-Difference-of-Squares-ez-lvl/Difference-of-Squares.jsx";
 import Perfect_Numbers from "../Exercises/execise-Perfect-Numbers-ez-lvl/Perfect-Numbers.jsx";
+import Luhn from "../Exercises/exsercise-Luhn-mid-lvl/Luhn.jsx";
 import App from "../App.jsx"
 import { createBrowserRouter } from "react-router-dom";
 let routs = createBrowserRouter([
@@ -62,6 +63,10 @@ let routs = createBrowserRouter([
               {
                 path: "Perfect_Numbers",
                 element:<Perfect_Numbers></Perfect_Numbers>
+            },
+            {
+                path: "Luhn",
+                element:<Luhn></Luhn>
             }
         ]
     }
