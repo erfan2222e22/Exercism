@@ -13,7 +13,9 @@ import Luhn from "../Exercises/exsercise-Luhn-mid-lvl/Luhn.jsx";
 import Prime_Factors from "../Exercises/exercisr-Prime-Factors-mid-lvl/Prime-Factors.jsx";
 import Grains from "../Exercises/exercise-Grains-mid-lvl/Grains.jsx";
 import App from "../App.jsx"
+
 import { createBrowserRouter } from "react-router-dom";
+import Palindrome_Products from "../Exercises/exercise-Palindrome Products-mid-lvl/Palindrome_Products.jsx";
 let routs = createBrowserRouter([
     {
         path: "/",
@@ -77,6 +79,10 @@ let routs = createBrowserRouter([
                   {
                 path: "Grains",
                 element:<Grains></Grains>
+            },
+                       {
+                path: "Palindrome_Products",
+                element:<Palindrome_Products></Palindrome_Products>
             },
         ]
     }

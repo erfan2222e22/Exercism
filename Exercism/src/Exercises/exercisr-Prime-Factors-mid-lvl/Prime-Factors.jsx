@@ -18,9 +18,8 @@ const Prime_Factors = () => {
         }
 
         return res
-        
     }
-    const number = 1
+    const number = 12
     return (
         <div onClick={() => console.log(primeFactors(number))} style={{ width: "100%", height: "100vh", backgroundColor: "#0c0c0c", color: "#fff", textAlign: "center", fontSize: "2rem", borderRadius: "1rem" }}>
             test me
