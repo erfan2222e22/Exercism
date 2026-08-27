@@ -13,9 +13,11 @@ import Luhn from "../Exercises/exsercise-Luhn-mid-lvl/Luhn.jsx";
 import Prime_Factors from "../Exercises/exercisr-Prime-Factors-mid-lvl/Prime-Factors.jsx";
 import Grains from "../Exercises/exercise-Grains-mid-lvl/Grains.jsx";
 import App from "../App.jsx"
-
-import { createBrowserRouter } from "react-router-dom";
+import Anagram from "../Exercises/exercise-Anagram-ez-lvl/Anagram.jsx";
 import Palindrome_Products from "../Exercises/exercise-Palindrome Products-mid-lvl/Palindrome_Products.jsx";
+import Acronym from "../Exercises/exercise-Acronym-ez-lvl/Acronym.jsx";
+import { createBrowserRouter } from "react-router-dom";
+
 let routs = createBrowserRouter([
     {
         path: "/",
@@ -46,43 +48,51 @@ let routs = createBrowserRouter([
             },
             {
                 path: "Nucleotide_count",
-                element:<Nucleotide_count></Nucleotide_count>
+                element: <Nucleotide_count></Nucleotide_count>
             },
-                {
+            {
                 path: "Scrabble_Score",
-                element:<Scrabble_Score></Scrabble_Score>
+                element: <Scrabble_Score></Scrabble_Score>
             },
-                 {
+            {
                 path: "Word_Count",
-                element:<Word_Count></Word_Count>
+                element: <Word_Count></Word_Count>
             },
             {
                 path: "Bank_Account",
-                element:<Bank_Account></Bank_Account>
+                element: <Bank_Account></Bank_Account>
             },
             {
                 path: "Difference_of_Squares",
-                element:<Difference_of_Squares></Difference_of_Squares>
+                element: <Difference_of_Squares></Difference_of_Squares>
             },
-              {
+            {
                 path: "Perfect_Numbers",
-                element:<Perfect_Numbers></Perfect_Numbers>
+                element: <Perfect_Numbers></Perfect_Numbers>
             },
             {
                 path: "Luhn",
-                element:<Luhn></Luhn>
+                element: <Luhn></Luhn>
             },
-             {
+            {
                 path: "Prime_Factors",
-                element:<Prime_Factors></Prime_Factors>
+                element: <Prime_Factors></Prime_Factors>
             },
-                  {
+            {
                 path: "Grains",
-                element:<Grains></Grains>
+                element: <Grains></Grains>
             },
-                       {
+            {
                 path: "Palindrome_Products",
-                element:<Palindrome_Products></Palindrome_Products>
+                element: <Palindrome_Products></Palindrome_Products>
+            },
+            {
+                path: "Anagram",
+                element: <Anagram></Anagram>
+            },
+            {
+            path: "Acronym",
+                element: <Acronym></Acronym>
             },
         ]
     }
