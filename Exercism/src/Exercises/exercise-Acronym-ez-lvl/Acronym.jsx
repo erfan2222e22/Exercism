@@ -1,5 +1,5 @@
 const Acronym = () => {
-    
+
     const parse = (string) => {
         const res = [];
         const s = string.replace(/[-_]/, " ")
@@ -15,7 +15,6 @@ const Acronym = () => {
         <div onClick={() => console.log(parse(string))} style={{ width: "100%", height: "100vh", backgroundColor: "#0c0c0c", color: "#fff", textAlign: "center", fontSize: "2rem", borderRadius: "1rem" }}>
             test me
         </div>
-            
     )
 };
 export default Acronym

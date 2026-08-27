@@ -1,3 +1,4 @@
+import App from "../App.jsx"
 import Camicia from "../Exercises/exercise-camicia-md-lvl/camicia"
 import Meetup from "../Exercises/exercise-meetup-mid-lvl/meetup.jsx";
 import Etl from "../Exercises/exercise-ETL-ez-lvl/etl.jsx";
@@ -12,10 +13,10 @@ import Perfect_Numbers from "../Exercises/execise-Perfect-Numbers-ez-lvl/Perfect
 import Luhn from "../Exercises/exsercise-Luhn-mid-lvl/Luhn.jsx";
 import Prime_Factors from "../Exercises/exercisr-Prime-Factors-mid-lvl/Prime-Factors.jsx";
 import Grains from "../Exercises/exercise-Grains-mid-lvl/Grains.jsx";
-import App from "../App.jsx"
 import Anagram from "../Exercises/exercise-Anagram-ez-lvl/Anagram.jsx";
 import Palindrome_Products from "../Exercises/exercise-Palindrome Products-mid-lvl/Palindrome_Products.jsx";
 import Acronym from "../Exercises/exercise-Acronym-ez-lvl/Acronym.jsx";
+import High_Scores from "../Exercises/exercise-High Scores-ez-lvl/High Scores.jsx";
 import { createBrowserRouter } from "react-router-dom";
 
 let routs = createBrowserRouter([
@@ -93,6 +94,10 @@ let routs = createBrowserRouter([
             {
             path: "Acronym",
                 element: <Acronym></Acronym>
+            },
+             {
+            path: "High_Scores",
+                element: <High_Scores></High_Scores>
             },
         ]
     }
