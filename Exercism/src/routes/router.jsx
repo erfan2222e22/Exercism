@@ -17,8 +17,9 @@ import Anagram from "../Exercises/exercise-Anagram-ez-lvl/Anagram.jsx";
 import Palindrome_Products from "../Exercises/exercise-Palindrome Products-mid-lvl/Palindrome_Products.jsx";
 import Acronym from "../Exercises/exercise-Acronym-ez-lvl/Acronym.jsx";
 import High_Scores from "../Exercises/exercise-High Scores-ez-lvl/High Scores.jsx";
-import { createBrowserRouter } from "react-router-dom";
+import Isogram from "../Exercises/exercise-Isogram-ez-lvl/Isogram.jsx";
 
+import { createBrowserRouter } from "react-router-dom";
 let routs = createBrowserRouter([
     {
         path: "/",
@@ -98,6 +99,10 @@ let routs = createBrowserRouter([
              {
             path: "High_Scores",
                 element: <High_Scores></High_Scores>
+            },
+             {
+            path: "isIsogram",
+                element: <Isogram></Isogram>
             },
         ]
     }
