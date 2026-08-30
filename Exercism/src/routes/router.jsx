@@ -18,8 +18,10 @@ import Palindrome_Products from "../Exercises/exercise-Palindrome Products-mid-l
 import Acronym from "../Exercises/exercise-Acronym-ez-lvl/Acronym.jsx";
 import High_Scores from "../Exercises/exercise-High Scores-ez-lvl/High Scores.jsx";
 import Isogram from "../Exercises/exercise-Isogram-ez-lvl/Isogram.jsx";
+import Matching_Brackets from "../Exercises/exercise-Matching-Brackets-ez-lvl/Matching-Brackets.jsx";
 
 import { createBrowserRouter } from "react-router-dom";
+
 let routs = createBrowserRouter([
     {
         path: "/",
@@ -103,6 +105,10 @@ let routs = createBrowserRouter([
              {
             path: "isIsogram",
                 element: <Isogram></Isogram>
+            },
+              {
+            path: "Matching_Brackets",
+                element: <Matching_Brackets></Matching_Brackets>
             },
         ]
     }
