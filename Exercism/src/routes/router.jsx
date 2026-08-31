@@ -21,6 +21,7 @@ import Isogram from "../Exercises/exercise-Isogram-ez-lvl/Isogram.jsx";
 import Matching_Brackets from "../Exercises/exercise-Matching-Brackets-ez-lvl/Matching-Brackets.jsx";
 
 import { createBrowserRouter } from "react-router-dom";
+import Phone_Number from "../Exercises/exercise-Phone-Number-ez-lvl/Phone-Number.jsx";
 
 let routs = createBrowserRouter([
     {
@@ -95,20 +96,24 @@ let routs = createBrowserRouter([
                 element: <Anagram></Anagram>
             },
             {
-            path: "Acronym",
+                path: "Acronym",
                 element: <Acronym></Acronym>
             },
-             {
-            path: "High_Scores",
+            {
+                path: "High_Scores",
                 element: <High_Scores></High_Scores>
             },
-             {
-            path: "isIsogram",
+            {
+                path: "isIsogram",
                 element: <Isogram></Isogram>
             },
-              {
-            path: "Matching_Brackets",
+            {
+                path: "Matching_Brackets",
                 element: <Matching_Brackets></Matching_Brackets>
+            },
+            {
+                path: "Phone_Number",
+                element: <Phone_Number></Phone_Number>
             },
         ]
     }
