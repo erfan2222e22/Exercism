@@ -25,7 +25,7 @@ const App = () => {
     <button onClick={() => navigate("isIsogram")}>exercise Isogram ez lvl</button>
     <button onClick={() => navigate("Matching_Brackets")}>exercise Matching_Brackets ez lvl</button>
     <button onClick={() => navigate("Phone_Number")}>exercise Phone_Number ez lvl</button>
-    
+    <button onClick={() => navigate("Series")}>exercise Series ez lvl</button>
   </div>
 }
 

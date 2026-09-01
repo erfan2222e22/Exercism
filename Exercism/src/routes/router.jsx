@@ -19,9 +19,10 @@ import Acronym from "../Exercises/exercise-Acronym-ez-lvl/Acronym.jsx";
 import High_Scores from "../Exercises/exercise-High Scores-ez-lvl/High Scores.jsx";
 import Isogram from "../Exercises/exercise-Isogram-ez-lvl/Isogram.jsx";
 import Matching_Brackets from "../Exercises/exercise-Matching-Brackets-ez-lvl/Matching-Brackets.jsx";
+import Series from "../Exercises/exercise-Series-ez-lvl/Series.jsx";
+import Phone_Number from "../Exercises/exercise-Phone-Number-ez-lvl/Phone-Number.jsx";
 
 import { createBrowserRouter } from "react-router-dom";
-import Phone_Number from "../Exercises/exercise-Phone-Number-ez-lvl/Phone-Number.jsx";
 
 let routs = createBrowserRouter([
     {
@@ -115,6 +116,10 @@ let routs = createBrowserRouter([
                 path: "Phone_Number",
                 element: <Phone_Number></Phone_Number>
             },
+            {
+                path: "Series",
+                element: <Series></Series>
+            }
         ]
     }
 ])
