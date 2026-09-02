@@ -23,6 +23,7 @@ import Series from "../Exercises/exercise-Series-ez-lvl/Series.jsx";
 import Phone_Number from "../Exercises/exercise-Phone-Number-ez-lvl/Phone-Number.jsx";
 
 import { createBrowserRouter } from "react-router-dom";
+import Largest_Series_Product from "../Exercises/Largest-Series-Product-mid-lvl/Largest-Series-Product.jsx";
 
 let routs = createBrowserRouter([
     {
@@ -119,6 +120,10 @@ let routs = createBrowserRouter([
             {
                 path: "Series",
                 element: <Series></Series>
+            },
+            {
+                path: "Largest Series Product",
+                element: <Largest_Series_Product></Largest_Series_Product>
             }
         ]
     }
