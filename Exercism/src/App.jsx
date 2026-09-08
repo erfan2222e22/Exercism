@@ -28,6 +28,8 @@ const App = () => {
     <button onClick={() => navigate("Series")}>exercise Series ez lvl</button>
     <button onClick={() => navigate("Series")}>exercise Series ez lvl</button>
     <button onClick={() => navigate("Largest Series Product")}>exercise Largest Series Product mid lvl</button>
+    <button onClick={() => navigate("Transpose")}>exercise Largest Transpose ez lvl</button>
+    <button onClick={() => navigate("Rectangles")}>exercise Largest Rectangles mid lvl</button>
 
   </div>
 }

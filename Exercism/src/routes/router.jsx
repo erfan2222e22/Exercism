@@ -21,9 +21,11 @@ import Isogram from "../Exercises/exercise-Isogram-ez-lvl/Isogram.jsx";
 import Matching_Brackets from "../Exercises/exercise-Matching-Brackets-ez-lvl/Matching-Brackets.jsx";
 import Series from "../Exercises/exercise-Series-ez-lvl/Series.jsx";
 import Phone_Number from "../Exercises/exercise-Phone-Number-ez-lvl/Phone-Number.jsx";
+import Transpose from "../Exercises/exercise-Transpose-ez-lvl/Transpose.jsx";
+import Rectangles from "../Exercises/exercise-Rectangles-mid-lvl/Rectangles.jsx";
+import Largest_Series_Product from "../Exercises/Largest-Series-Product-mid-lvl/Largest-Series-Product.jsx";
 
 import { createBrowserRouter } from "react-router-dom";
-import Largest_Series_Product from "../Exercises/Largest-Series-Product-mid-lvl/Largest-Series-Product.jsx";
 
 let routs = createBrowserRouter([
     {
@@ -124,7 +126,15 @@ let routs = createBrowserRouter([
             {
                 path: "Largest Series Product",
                 element: <Largest_Series_Product></Largest_Series_Product>
-            }
+            },
+            {
+                path: "Transpose",
+                element: <Transpose></Transpose>
+            },
+             {
+                path: "Rectangles",
+                element: <Rectangles></Rectangles>
+            },
         ]
     }
 ])
