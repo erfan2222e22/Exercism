@@ -24,6 +24,7 @@ import Phone_Number from "../Exercises/exercise-Phone-Number-ez-lvl/Phone-Number
 import Transpose from "../Exercises/exercise-Transpose-ez-lvl/Transpose.jsx";
 import Rectangles from "../Exercises/exercise-Rectangles-mid-lvl/Rectangles.jsx";
 import Largest_Series_Product from "../Exercises/Largest-Series-Product-mid-lvl/Largest-Series-Product.jsx";
+import Spiral_Matrix from "../Exercises/exercise-Spiral_Matrix-mid-lvl/Spiral Matrix.jsx";
 
 import { createBrowserRouter } from "react-router-dom";
 
@@ -135,6 +136,10 @@ let routs = createBrowserRouter([
                 path: "Rectangles",
                 element: <Rectangles></Rectangles>
             },
+            {
+                 path:"Spiral_Matrix",
+                 element:<Spiral_Matrix></Spiral_Matrix>
+             }
         ]
     }
 ])
