@@ -31,8 +31,12 @@ const App = () => {
     <button onClick={() => navigate("Transpose")}>exercise Largest Transpose ez lvl</button>
     <button onClick={() => navigate("Rectangles")}>exercise  Rectangles mid lvl</button>
     <button onClick={() => navigate("Spiral_Matrix")}>exercise Spiral_Matrix mid lvl</button>
-
+    <button onClick={() => navigate("Spiral_Matrix")}>exercise Spiral_Matrix mid lvl</button>
+    <button onClick={() => navigate("Relative_Distance")}>exercise Relative_Distance mid lvl</button>
+    <button onClick={() => navigate("OCR_Numbers")}>exercise OCR_Numbers mid lvl</button>
+  
   </div>
+
 }
 
 export default App

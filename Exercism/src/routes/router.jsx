@@ -25,6 +25,8 @@ import Transpose from "../Exercises/exercise-Transpose-ez-lvl/Transpose.jsx";
 import Rectangles from "../Exercises/exercise-Rectangles-mid-lvl/Rectangles.jsx";
 import Largest_Series_Product from "../Exercises/Largest-Series-Product-mid-lvl/Largest-Series-Product.jsx";
 import Spiral_Matrix from "../Exercises/exercise-Spiral_Matrix-mid-lvl/Spiral Matrix.jsx";
+import Relative_Distance from "../Exercises/exercise-Relative-Distance-mid-lvl/Relative-Distance.jsx";
+import OCR_Numbers from "../Exercises/exercise-OCR-Numbers-mid-lvl/OCR_Numbers.jsx";
 
 import { createBrowserRouter } from "react-router-dom";
 
@@ -139,6 +141,14 @@ let routs = createBrowserRouter([
             {
                  path:"Spiral_Matrix",
                  element:<Spiral_Matrix></Spiral_Matrix>
+            },
+             {
+                 path:"Relative_Distance",
+                 element:<Relative_Distance></Relative_Distance>
+            },
+               {
+                 path:"OCR_Numbers",
+                 element:<OCR_Numbers></OCR_Numbers>
              }
         ]
     }
