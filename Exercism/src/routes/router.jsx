@@ -28,7 +28,8 @@ import Spiral_Matrix from "../Exercises/exercise-Spiral_Matrix-mid-lvl/Spiral Ma
 import Relative_Distance from "../Exercises/exercise-Relative-Distance-mid-lvl/Relative-Distance.jsx";
 import OCR_Numbers from "../Exercises/exercise-OCR-Numbers-mid-lvl/OCR_Numbers.jsx";
 import Saddle_Points from "../Exercises/exercise-Saddle Points-mid-lvl/Saddle-Points.jsx";
-
+import Forth from "../Exercises/exercise-Forth-hard-lvl/Forth.jsx";
+import Food_Chain from "../Exercises/exsercise-Food-Chain-mid-lvl/Food-Chain.jsx";
 import { createBrowserRouter } from "react-router-dom";
 
 let routs = createBrowserRouter([
@@ -151,9 +152,17 @@ let routs = createBrowserRouter([
                  path:"OCR_Numbers",
                  element:<OCR_Numbers></OCR_Numbers>
             },
-                   {
+            {
                  path:"Saddle_Points",
                  element:<Saddle_Points></Saddle_Points>
+            },
+               {
+                 path:"Forth",
+                 element:<Forth></Forth>
+            },
+                   {
+                 path:"Food_Chain",
+                 element:<Food_Chain></Food_Chain>
              }
         ]
     }

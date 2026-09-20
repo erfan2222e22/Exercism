@@ -35,6 +35,8 @@ const App = () => {
     <button onClick={() => navigate("Relative_Distance")}>exercise Relative_Distance mid lvl</button>
     <button onClick={() => navigate("OCR_Numbers")}>exercise OCR_Numbers mid lvl</button>
     <button onClick={() => navigate("Saddle_Points")}>exercise Saddle_Points mid lvl</button>
+    <button onClick={() => navigate("Forth")}>exercise Forth hard lvl</button>
+    <button onClick={() => navigate("Food_Chain")}>exercise Food_Chain mid lvl</button>
   
   </div>
 
