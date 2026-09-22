@@ -31,6 +31,7 @@ import Saddle_Points from "../Exercises/exercise-Saddle Points-mid-lvl/Saddle-Po
 import Forth from "../Exercises/exercise-Forth-hard-lvl/Forth.jsx";
 import Food_Chain from "../Exercises/exsercise-Food-Chain-mid-lvl/Food-Chain.jsx";
 import House from "../Exercises/exsercise-House-mid-lvl/House.jsx";
+import ISBN_Verifier from "../Exercises/exsercise-ISBN Verifier-mid-lvl/ISBN-Verifier.jsx";
 
 import { createBrowserRouter } from "react-router-dom";
 
@@ -169,6 +170,10 @@ let routs = createBrowserRouter([
                {
                  path:"House",
                  element:<House></House>
+            },
+                {
+                 path:"ISBN_Verifier",
+                 element:<ISBN_Verifier></ISBN_Verifier>
              }
         ]
     }
