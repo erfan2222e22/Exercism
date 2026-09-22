@@ -37,9 +37,9 @@ const App = () => {
     <button onClick={() => navigate("Saddle_Points")}>exercise Saddle_Points mid lvl</button>
     <button onClick={() => navigate("Forth")}>exercise Forth hard lvl</button>
     <button onClick={() => navigate("Food_Chain")}>exercise Food_Chain mid lvl</button>
+    <button onClick={() => navigate("House")}>exercise House mid lvl</button>
   
   </div>
-
 }
 
 export default App

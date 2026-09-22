@@ -30,6 +30,8 @@ import OCR_Numbers from "../Exercises/exercise-OCR-Numbers-mid-lvl/OCR_Numbers.j
 import Saddle_Points from "../Exercises/exercise-Saddle Points-mid-lvl/Saddle-Points.jsx";
 import Forth from "../Exercises/exercise-Forth-hard-lvl/Forth.jsx";
 import Food_Chain from "../Exercises/exsercise-Food-Chain-mid-lvl/Food-Chain.jsx";
+import House from "../Exercises/exsercise-House-mid-lvl/House.jsx";
+
 import { createBrowserRouter } from "react-router-dom";
 
 let routs = createBrowserRouter([
@@ -136,33 +138,37 @@ let routs = createBrowserRouter([
                 path: "Transpose",
                 element: <Transpose></Transpose>
             },
-             {
+            {
                 path: "Rectangles",
                 element: <Rectangles></Rectangles>
             },
             {
-                 path:"Spiral_Matrix",
-                 element:<Spiral_Matrix></Spiral_Matrix>
-            },
-             {
-                 path:"Relative_Distance",
-                 element:<Relative_Distance></Relative_Distance>
-            },
-               {
-                 path:"OCR_Numbers",
-                 element:<OCR_Numbers></OCR_Numbers>
+                path: "Spiral_Matrix",
+                element: <Spiral_Matrix></Spiral_Matrix>
             },
             {
-                 path:"Saddle_Points",
-                 element:<Saddle_Points></Saddle_Points>
+                path: "Relative_Distance",
+                element: <Relative_Distance></Relative_Distance>
+            },
+            {
+                path: "OCR_Numbers",
+                element: <OCR_Numbers></OCR_Numbers>
+            },
+            {
+                path: "Saddle_Points",
+                element: <Saddle_Points></Saddle_Points>
+            },
+            {
+                path: "Forth",
+                element: <Forth></Forth>
+            },
+            {
+                path: "Food_Chain",
+                element: <Food_Chain></Food_Chain>
             },
                {
-                 path:"Forth",
-                 element:<Forth></Forth>
-            },
-                   {
-                 path:"Food_Chain",
-                 element:<Food_Chain></Food_Chain>
+                 path:"House",
+                 element:<House></House>
              }
         ]
     }
