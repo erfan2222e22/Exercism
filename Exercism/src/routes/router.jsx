@@ -32,6 +32,7 @@ import Forth from "../Exercises/exercise-Forth-hard-lvl/Forth.jsx";
 import Food_Chain from "../Exercises/exsercise-Food-Chain-mid-lvl/Food-Chain.jsx";
 import House from "../Exercises/exsercise-House-mid-lvl/House.jsx";
 import ISBN_Verifier from "../Exercises/exsercise-ISBN Verifier-mid-lvl/ISBN-Verifier.jsx";
+import Pig_Latin from "../Exercises/exsercise-Pig-Latin-mid-lvl/Pig-Latin.jsx";
 
 import { createBrowserRouter } from "react-router-dom";
 
@@ -167,14 +168,18 @@ let routs = createBrowserRouter([
                 path: "Food_Chain",
                 element: <Food_Chain></Food_Chain>
             },
-               {
-                 path:"House",
-                 element:<House></House>
+            {
+                path: "House",
+                element: <House></House>
             },
-                {
-                 path:"ISBN_Verifier",
-                 element:<ISBN_Verifier></ISBN_Verifier>
-             }
+            {
+                path: "ISBN_Verifier",
+                element: <ISBN_Verifier></ISBN_Verifier>
+            },
+            {
+                path: "Pig_Latin",
+                element: <Pig_Latin></Pig_Latin>
+            }
         ]
     }
 ])

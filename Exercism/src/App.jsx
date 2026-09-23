@@ -39,7 +39,7 @@ const App = () => {
     <button onClick={() => navigate("Food_Chain")}>exercise Food_Chain mid lvl</button>
     <button onClick={() => navigate("House")}>exercise House mid lvl</button>
     <button onClick={() => navigate("ISBN_Verifier")}>exercise ISBN_Verifier mid lvl</button>
-  
+    <button onClick={() => navigate("Pig_Latin")}>exercise Pig_Latin mid lvl</button>
   </div>
 }
 
