@@ -33,6 +33,7 @@ import Food_Chain from "../Exercises/exsercise-Food-Chain-mid-lvl/Food-Chain.jsx
 import House from "../Exercises/exsercise-House-mid-lvl/House.jsx";
 import ISBN_Verifier from "../Exercises/exsercise-ISBN Verifier-mid-lvl/ISBN-Verifier.jsx";
 import Pig_Latin from "../Exercises/exsercise-Pig-Latin-mid-lvl/Pig-Latin.jsx";
+import Proverb from "../Exercises/exercise-Proverb-mid-lvl/Proverb.jsx";
 
 import { createBrowserRouter } from "react-router-dom";
 
@@ -179,6 +180,10 @@ let routs = createBrowserRouter([
             {
                 path: "Pig_Latin",
                 element: <Pig_Latin></Pig_Latin>
+            },
+                {
+                path: "Proverb",
+                element: <Proverb></Proverb>
             }
         ]
     }

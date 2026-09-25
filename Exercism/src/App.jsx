@@ -40,6 +40,7 @@ const App = () => {
     <button onClick={() => navigate("House")}>exercise House mid lvl</button>
     <button onClick={() => navigate("ISBN_Verifier")}>exercise ISBN_Verifier mid lvl</button>
     <button onClick={() => navigate("Pig_Latin")}>exercise Pig_Latin mid lvl</button>
+  <button onClick={() => navigate("Proverb")}>exercise Proverb mid lvl</button>
   </div>
 }
 
