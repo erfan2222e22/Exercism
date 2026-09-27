@@ -34,6 +34,8 @@ import House from "../Exercises/exsercise-House-mid-lvl/House.jsx";
 import ISBN_Verifier from "../Exercises/exsercise-ISBN Verifier-mid-lvl/ISBN-Verifier.jsx";
 import Pig_Latin from "../Exercises/exsercise-Pig-Latin-mid-lvl/Pig-Latin.jsx";
 import Proverb from "../Exercises/exercise-Proverb-mid-lvl/Proverb.jsx";
+import Twelve_Days from "../Exercises/exercise-Twelve-Days-mid/Twelve-Days.jsx";
+import Yacht from "../Exercises/exercise-Yacht-mid-lvl/Yacht.jsx";
 
 import { createBrowserRouter } from "react-router-dom";
 
@@ -184,6 +186,14 @@ let routs = createBrowserRouter([
                 {
                 path: "Proverb",
                 element: <Proverb></Proverb>
+            },
+                  {
+                path: "Twelve_Days",
+                element: <Twelve_Days></Twelve_Days>
+            },
+                        {
+                path: "Yacht",
+                element: <Yacht></Yacht>
             }
         ]
     }
