@@ -36,6 +36,7 @@ import Pig_Latin from "../Exercises/exsercise-Pig-Latin-mid-lvl/Pig-Latin.jsx";
 import Proverb from "../Exercises/exercise-Proverb-mid-lvl/Proverb.jsx";
 import Twelve_Days from "../Exercises/exercise-Twelve-Days-mid/Twelve-Days.jsx";
 import Yacht from "../Exercises/exercise-Yacht-mid-lvl/Yacht.jsx";
+import Resistor_Color_Trio from "../Exercises/exercise-Resistor-Color-Trio-mid-lvl/Resistor-Color-Trio.jsx";
 
 import { createBrowserRouter } from "react-router-dom";
 
@@ -194,6 +195,10 @@ let routs = createBrowserRouter([
                         {
                 path: "Yacht",
                 element: <Yacht></Yacht>
+            },
+            {
+                path: "Resistor_Color_Trio",
+                element: <Resistor_Color_Trio></Resistor_Color_Trio>
             }
         ]
     }
