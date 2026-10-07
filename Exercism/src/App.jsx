@@ -44,6 +44,9 @@ const App = () => {
     <button onClick={() => navigate("Twelve_Days")}>exercise Twelve_Days mid lvl</button>
     <button onClick={() => navigate("Yacht")}>exercise Yacht mid lvl</button>
     <button onClick={() => navigate("Resistor_Color_Trio")}>exercise Resistor_Color_Trio mid lvl</button>
+    <button onClick={() => navigate("Dominoes")}>exercise Dominoes mid lvl</button>
+    <button onClick={() => navigate("Say")}>exercise Say mid lvl</button>
+  
   </div>
 };
 
