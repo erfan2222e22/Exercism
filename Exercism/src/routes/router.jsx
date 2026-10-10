@@ -38,9 +38,10 @@ import Twelve_Days from "../Exercises/exercise-Twelve-Days-mid/Twelve-Days.jsx";
 import Yacht from "../Exercises/exercise-Yacht-mid-lvl/Yacht.jsx";
 import Resistor_Color_Trio from "../Exercises/exercise-Resistor-Color-Trio-mid-lvl/Resistor-Color-Trio.jsx";
 import Dominoes from "../Exercises/exercise-Dominoes-mid-lvl/Dominoes.jsx";
+import Say from "../Exercises/exsercise-say-mid-lvl/say.jsx";
+import Dimonds from "../Exercises/exercise-Dimonds-mid-lvl/dimonds.jsx";
 
 import { createBrowserRouter } from "react-router-dom";
-import Say from "../Exercises/exsercise-say-mid-lvl/say.jsx";
 
 let routs = createBrowserRouter([
     {
@@ -209,6 +210,10 @@ let routs = createBrowserRouter([
             {
                 path: "Say",
                 element: <Say></Say>
+            },
+               {
+                path: "Dimonds",
+                element: <Dimonds></Dimonds>
             }
         ]
     }
