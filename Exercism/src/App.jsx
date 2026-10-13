@@ -1,53 +1,49 @@
-
 import { useNavigate } from "react-router-dom"
+import "./App.css"
+
+const exercises = {
+  easy: [
+    "Etl", "Hamming", "Raindrops", "Bank_Account", "Difference_of_Squares",
+    "Perfect_Numbers", "Anagram", "Acronym", "High_Scores", "isIsogram",
+    "Matching_Brackets", "Phone_Number", "Series", "Transpose",
+  ],
+  mid: [
+    "Camicia", "Meetup", "Nucleotide_count", "Scrabble_Score", "Word_Count",
+    "Luhn", "Prime_Factors", "Grains", "Palindrome_Products",
+    "Largest Series Product", "Rectangles", "Spiral_Matrix", "Relative_Distance",
+    "OCR_Numbers", "Saddle_Points", "Food_Chain", "House", "ISBN_Verifier",
+    "Pig_Latin", "Proverb", "Twelve_Days", "Yacht", "Resistor_Color_Trio",
+    "Dominoes", "Say", "Dimonds", "Rational_Numbers",
+  ],
+  hard: ["Forth"],
+}
+
+const levelTitle = { easy: "Easy 🟢", mid: "Medium 🟡", hard: "Hard 🔴" }
+
 const App = () => {
   const navigate = useNavigate()
-  return <div>
-    <button onClick={() => navigate("Camicia")}>Camicia exercise mid</button>
-    <button onClick={() => navigate("Meetup")}>Meetup exercise mid</button>
-    <button onClick={() => navigate("Etl")}>exercise ETL ez lvl</button>
-    <button onClick={() => navigate("Hamming")}>exercise Hamming ez lvl</button>
-    <button onClick={() => navigate("Raindrops")}>exercise Raindrops ez lvl</button>
-    <br />
-    <button onClick={() => navigate("Nucleotide_count")}>exercise Nucleotide_count mid lvl</button>
-    <button onClick={() => navigate("Scrabble_Score")}>exercise Scrabble_Score mid lvl</button>
-    <button onClick={() => navigate("Word_Count")}>exercise Word_Count mid lvl</button>
-    <button onClick={() => navigate("Bank_Account")}>exercise Bank_Account ez lvl</button>
-    <button onClick={() => navigate("Difference_of_Squares")}>exercise Difference_of_Squares ez lvl</button>
-    <button onClick={() => navigate("Perfect_Numbers")}>exercise Perfect_Numbers ez lvl</button>
-    <button onClick={() => navigate("Luhn")}>exercise Luhn mid lvl</button>
-    <button onClick={() => navigate("Prime_Factors")}>exercise Prime_Factors mid lvl</button>
-    <button onClick={() => navigate("Grains")}>exercise Grains mid lvl</button>
-    <button onClick={() => navigate("Palindrome_Products")}>exercise Palindrome_Products mid lvl</button>
-    <button onClick={() => navigate("Anagram")}>exercise Anagram ez lvl</button>
-    <button onClick={() => navigate("Acronym")}>exercise Acronym ez lvl</button>
-    <button onClick={() => navigate("High_Scores")}>exercise High_Scores ez lvl</button>
-    <button onClick={() => navigate("isIsogram")}>exercise Isogram ez lvl</button>
-    <button onClick={() => navigate("Matching_Brackets")}>exercise Matching_Brackets ez lvl</button>
-    <button onClick={() => navigate("Phone_Number")}>exercise Phone_Number ez lvl</button>
-    <button onClick={() => navigate("Series")}>exercise Series ez lvl</button>
-    <button onClick={() => navigate("Series")}>exercise Series ez lvl</button>
-    <button onClick={() => navigate("Largest Series Product")}>exercise Largest Series Product mid lvl</button>
-    <button onClick={() => navigate("Transpose")}>exercise Largest Transpose ez lvl</button>
-    <button onClick={() => navigate("Rectangles")}>exercise  Rectangles mid lvl</button>
-    <button onClick={() => navigate("Spiral_Matrix")}>exercise Spiral_Matrix mid lvl</button>
-    <button onClick={() => navigate("Spiral_Matrix")}>exercise Spiral_Matrix mid lvl</button>
-    <button onClick={() => navigate("Relative_Distance")}>exercise Relative_Distance mid lvl</button>
-    <button onClick={() => navigate("OCR_Numbers")}>exercise OCR_Numbers mid lvl</button>
-    <button onClick={() => navigate("Saddle_Points")}>exercise Saddle_Points mid lvl</button>
-    <button onClick={() => navigate("Forth")}>exercise Forth hard lvl</button>
-    <button onClick={() => navigate("Food_Chain")}>exercise Food_Chain mid lvl</button>
-    <button onClick={() => navigate("House")}>exercise House mid lvl</button>
-    <button onClick={() => navigate("ISBN_Verifier")}>exercise ISBN_Verifier mid lvl</button>
-    <button onClick={() => navigate("Pig_Latin")}>exercise Pig_Latin mid lvl</button>
-    <button onClick={() => navigate("Proverb")}>exercise Proverb mid lvl</button>
-    <button onClick={() => navigate("Twelve_Days")}>exercise Twelve_Days mid lvl</button>
-    <button onClick={() => navigate("Yacht")}>exercise Yacht mid lvl</button>
-    <button onClick={() => navigate("Resistor_Color_Trio")}>exercise Resistor_Color_Trio mid lvl</button>
-    <button onClick={() => navigate("Dominoes")}>exercise Dominoes mid lvl</button>
-    <button onClick={() => navigate("Say")}>exercise Say mid lvl</button>
-    <button onClick={() => navigate("Dimonds")}>exercise Dimonds mid lvl</button>
-  </div>
-};
+
+  return (
+
+    <div className="app theme-neon">
+      {Object.entries(exercises).map(([level, list]) => (
+        <section key={level} className={level}>
+          <h2 className="title">{levelTitle[level]}</h2>
+          <div className="grid">
+            {list.map((name) => (
+              <button
+                key={name}
+                className={`card ${level}`}
+                onClick={() => navigate(name)}
+              >
+                {name.replaceAll("_", " ")}
+              </button>
+            ))}
+          </div>
+        </section>
+      ))}
+    </div>
+  )
+}
 
 export default App

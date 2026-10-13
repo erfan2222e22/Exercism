@@ -40,6 +40,7 @@ import Resistor_Color_Trio from "../Exercises/exercise-Resistor-Color-Trio-mid-l
 import Dominoes from "../Exercises/exercise-Dominoes-mid-lvl/Dominoes.jsx";
 import Say from "../Exercises/exsercise-say-mid-lvl/say.jsx";
 import Dimonds from "../Exercises/exercise-Dimonds-mid-lvl/dimonds.jsx";
+import Rational_Numbers from "../Exercises/exercise-Rational-Numbers-mid-lvl/Rational-Numbers.jsx";
 
 import { createBrowserRouter } from "react-router-dom";
 
@@ -214,6 +215,10 @@ let routs = createBrowserRouter([
                {
                 path: "Dimonds",
                 element: <Dimonds></Dimonds>
+            },
+               {
+                path: "Rational_Numbers",
+                element: <Rational_Numbers></Rational_Numbers>
             }
         ]
     }
