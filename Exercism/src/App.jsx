@@ -13,7 +13,7 @@ const exercises = {
     "Largest Series Product", "Rectangles", "Spiral_Matrix", "Relative_Distance",
     "OCR_Numbers", "Saddle_Points", "Food_Chain", "House", "ISBN_Verifier",
     "Pig_Latin", "Proverb", "Twelve_Days", "Yacht", "Resistor_Color_Trio",
-    "Dominoes", "Say", "Dimonds", "Rational_Numbers",
+    "Dominoes", "Say", "Dimonds", "Rational_Numbers","Sublist"
   ],
   hard: ["Forth"],
 }
