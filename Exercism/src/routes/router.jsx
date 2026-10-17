@@ -42,6 +42,7 @@ import Say from "../Exercises/exsercise-say-mid-lvl/say.jsx";
 import Dimonds from "../Exercises/exercise-Dimonds-mid-lvl/dimonds.jsx";
 import Rational_Numbers from "../Exercises/exercise-Rational-Numbers-mid-lvl/Rational-Numbers.jsx";
 import Sublist from "../Exercises/exercise-sublist-mid-lvl/sublist.jsx";
+import Binary_Search_Tree from "../Exercises/exercise-Binary-Search-Tree-mid-lvl/Binary-Search-Tree.jsx";
 
 import { createBrowserRouter } from "react-router-dom";
 
@@ -224,6 +225,10 @@ let routs = createBrowserRouter([
                    {
                 path: "Sublist",
                 element: <Sublist></Sublist>
+            },
+                            {
+                path: "Binary_Search_Tree",
+                element: <Binary_Search_Tree></Binary_Search_Tree>
             },
         ]
     }
