@@ -43,6 +43,7 @@ import Dimonds from "../Exercises/exercise-Dimonds-mid-lvl/dimonds.jsx";
 import Rational_Numbers from "../Exercises/exercise-Rational-Numbers-mid-lvl/Rational-Numbers.jsx";
 import Sublist from "../Exercises/exercise-sublist-mid-lvl/sublist.jsx";
 import Binary_Search_Tree from "../Exercises/exercise-Binary-Search-Tree-mid-lvl/Binary-Search-Tree.jsx";
+import Custom_Set from "../Exercises/exercise-Custom-Set-mid-lvl/Custom-Set.jsx";
 
 import { createBrowserRouter } from "react-router-dom";
 
@@ -230,6 +231,10 @@ let routs = createBrowserRouter([
                 path: "Binary_Search_Tree",
                 element: <Binary_Search_Tree></Binary_Search_Tree>
             },
+            {
+                path: "Custom_Set",
+                element: <Custom_Set></Custom_Set>
+            }
         ]
     }
 ])
