@@ -44,7 +44,7 @@ import Rational_Numbers from "../Exercises/exercise-Rational-Numbers-mid-lvl/Rat
 import Sublist from "../Exercises/exercise-sublist-mid-lvl/sublist.jsx";
 import Binary_Search_Tree from "../Exercises/exercise-Binary-Search-Tree-mid-lvl/Binary-Search-Tree.jsx";
 import Custom_Set from "../Exercises/exercise-Custom-Set-mid-lvl/Custom-Set.jsx";
-
+import Binary_Search from "../Exercises/exercise-Binary-Search-mid-lvl/Binary-Search.jsx";
 import { createBrowserRouter } from "react-router-dom";
 
 let routs = createBrowserRouter([
@@ -234,6 +234,10 @@ let routs = createBrowserRouter([
             {
                 path: "Custom_Set",
                 element: <Custom_Set></Custom_Set>
+            },
+               {
+                path: "Binary_Search",
+                element: <Binary_Search></Binary_Search>
             }
         ]
     }

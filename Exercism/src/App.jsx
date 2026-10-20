@@ -14,7 +14,7 @@ const exercises = {
     "OCR_Numbers", "Saddle_Points", "Food_Chain", "House", "ISBN_Verifier",
     "Pig_Latin", "Proverb", "Twelve_Days", "Yacht", "Resistor_Color_Trio",
     "Dominoes", "Say", "Dimonds", "Rational_Numbers", "Sublist",
-    "Binary_Search_Tree", "Custom_Set"
+    "Binary_Search_Tree", "Custom_Set","Binary_Search"
   ],
   hard: ["Forth"],
 }
