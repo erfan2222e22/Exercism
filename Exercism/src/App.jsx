@@ -16,7 +16,7 @@ const exercises = {
     "Dominoes", "Say", "Dimonds", "Rational_Numbers", "Sublist",
     "Binary_Search_Tree", "Custom_Set","Binary_Search"
   ],
-  hard: ["Forth","Circular_Buffer"],
+  hard: ["Forth","Circular_Buffer","Simple_Linked_List"],
 }
 
 const levelTitle = { easy: "Easy 🟢", mid: "Medium 🟡", hard: "Hard 🔴" }

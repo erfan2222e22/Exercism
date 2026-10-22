@@ -46,6 +46,7 @@ import Binary_Search_Tree from "../Exercises/exercise-Binary-Search-Tree-mid-lvl
 import Custom_Set from "../Exercises/exercise-Custom-Set-mid-lvl/Custom-Set.jsx";
 import Binary_Search from "../Exercises/exercise-Binary-Search-mid-lvl/Binary-Search.jsx";
 import Circular_Buffer from "../Exercises/exercise-solved-Circular-Buffer-hard-lvl/Circular-Buffer.jsx";
+import Simple_Linked_List from "../Exercises/exercise-Simple-Linked-List-hard-lvl/Simple-Linked-List.jsx";
 import { createBrowserRouter } from "react-router-dom";
 
 let routs = createBrowserRouter([
@@ -243,7 +244,11 @@ let routs = createBrowserRouter([
                   {
                 path: "Circular_Buffer",
                 element: <Circular_Buffer></Circular_Buffer>
-            }
+            },
+                          {
+                path: "Simple_Linked_List",
+                element: <Simple_Linked_List></Simple_Linked_List>
+            },
         ]
     }
 ])
