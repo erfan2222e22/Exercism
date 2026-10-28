@@ -1,0 +1,99 @@
+:root {
+  --bg: #070b14;
+  --panel: #10182a;
+  --text: #e8f4ff;
+  --muted: #8aa0c4;
+  --easy: #22c55e;
+  --mid: #eab308;
+  --hard: #ef4444;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background:
+    radial-gradient(circle at top, #1a2744 0%, transparent 45%),
+    var(--bg);
+  color: var(--text);
+}
+
+.app.theme-neon {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 20px 64px;
+}
+
+.title {
+  margin: 0 0 16px;
+  font-size: 1.4rem;
+  letter-spacing: 0.04em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+section {
+  margin-bottom: 32px;
+  padding: 20px;
+  border-radius: 16px;
+  background: color-mix(in srgb, var(--panel) 88%, black);
+  border: 1px solid #24324d;
+}
+
+.card {
+  appearance: none;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  padding: 14px 12px;
+  min-height: 56px;
+  background: #0c1322;
+  color: var(--text);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+.card.easy {
+  border-color: color-mix(in srgb, var(--easy) 55%, transparent);
+  box-shadow: 0 0 12px color-mix(in srgb, var(--easy) 18%, transparent);
+}
+
+.card.easy:hover {
+  box-shadow: 0 0 18px color-mix(in srgb, var(--easy) 40%, transparent);
+}
+
+.card.mid {
+  border-color: color-mix(in srgb, var(--mid) 55%, transparent);
+  box-shadow: 0 0 12px color-mix(in srgb, var(--mid) 18%, transparent);
+}
+
+.card.mid:hover {
+  box-shadow: 0 0 18px color-mix(in srgb, var(--mid) 40%, transparent);
+}
+
+.card.hard {
+  border-color: color-mix(in srgb, var(--hard) 55%, transparent);
+  box-shadow: 0 0 12px color-mix(in srgb, var(--hard) 18%, transparent);
+}
+
+.card.hard:hover {
+  box-shadow: 0 0 18px color-mix(in srgb, var(--hard) 40%, transparent);
+}
