@@ -48,6 +48,7 @@ import Binary_Search from "../Exercises/exercise-Binary-Search-mid-lvl/Binary-Se
 import Circular_Buffer from "../Exercises/exercise-solved-Circular-Buffer-hard-lvl/Circular-Buffer.jsx";
 import Simple_Linked_List from "../Exercises/exercise-Simple-Linked-List-hard-lvl/Simple-Linked-List.jsx";
 import Word_Search from "../Exercises/exercise-Word Search-hard-lvl/Word-Search.jsx";
+import Variable_Length_Quantity from "../Exercises/exercise-Variable-Length-Quantity-mid-lvl/Variable-Length-Quantity.jsx";
 
 import { createBrowserRouter } from "react-router-dom";
 
@@ -254,6 +255,10 @@ let routs = createBrowserRouter([
             {
                 path: "Word_Search",
                 element: <Word_Search></Word_Search>
+            },
+             {
+                path: "Variable_Length_Quantity",
+                element: <Variable_Length_Quantity></Variable_Length_Quantity>
             }
         ]
     }
