@@ -55,7 +55,6 @@ const Variable_Length_Quantity = () => {
         result = 0;
       }
     } 
-
     return hexList;
   };
 
