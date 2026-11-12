@@ -1,5 +1,5 @@
-import App from "../App.jsx"
-import Camicia from "../Exercises/exercise-camicia-md-lvl/camicia"
+import App from "../App.jsx";
+import Camicia from "../Exercises/exercise-camicia-md-lvl/camicia";
 import Meetup from "../Exercises/exercise-meetup-mid-lvl/meetup.jsx";
 import Etl from "../Exercises/exercise-ETL-ez-lvl/etl.jsx";
 import Hamming from "../Exercises/exercise-hamming-ez-lvl/hamming.jsx";
@@ -49,218 +49,229 @@ import Circular_Buffer from "../Exercises/exercise-solved-Circular-Buffer-hard-l
 import Simple_Linked_List from "../Exercises/exercise-Simple-Linked-List-hard-lvl/Simple-Linked-List.jsx";
 import Word_Search from "../Exercises/exercise-Word Search-hard-lvl/Word-Search.jsx";
 import Variable_Length_Quantity from "../Exercises/exercise-Variable-Length-Quantity-mid-lvl/Variable-Length-Quantity.jsx";
+import Tow_Bucket from "../Exercises/exercise-Alphametics-mid-lvl/Alphametics.jsx";
+import Alphametics from "../Exercises/exercise-Alphametics-mid-lvl/Alphametics.jsx";
+import Test from "../test.jsx";
 
 import { createBrowserRouter } from "react-router-dom";
 
 let routs = createBrowserRouter([
-    {
-        path: "/",
-        children: [
-            {
-                index: true,
-                element: <App></App>
-            },
-            {
-                path: "Camicia",
-                element: <Camicia></Camicia>
-            },
-            {
-                path: "Meetup",
-                element: <Meetup></Meetup>
-            },
-            {
-                path: "ETL",
-                element: <Etl></Etl>
-            },
-            {
-                path: "Hamming",
-                element: <Hamming></Hamming>
-            },
-            {
-                path: "Raindrops",
-                element: <Raindrops></Raindrops>
-            },
-            {
-                path: "Nucleotide_count",
-                element: <Nucleotide_count></Nucleotide_count>
-            },
-            {
-                path: "Scrabble_Score",
-                element: <Scrabble_Score></Scrabble_Score>
-            },
-            {
-                path: "Word_Count",
-                element: <Word_Count></Word_Count>
-            },
-            {
-                path: "Bank_Account",
-                element: <Bank_Account></Bank_Account>
-            },
-            {
-                path: "Difference_of_Squares",
-                element: <Difference_of_Squares></Difference_of_Squares>
-            },
-            {
-                path: "Perfect_Numbers",
-                element: <Perfect_Numbers></Perfect_Numbers>
-            },
-            {
-                path: "Luhn",
-                element: <Luhn></Luhn>
-            },
-            {
-                path: "Prime_Factors",
-                element: <Prime_Factors></Prime_Factors>
-            },
-            {
-                path: "Grains",
-                element: <Grains></Grains>
-            },
-            {
-                path: "Palindrome_Products",
-                element: <Palindrome_Products></Palindrome_Products>
-            },
-            {
-                path: "Anagram",
-                element: <Anagram></Anagram>
-            },
-            {
-                path: "Acronym",
-                element: <Acronym></Acronym>
-            },
-            {
-                path: "High_Scores",
-                element: <High_Scores></High_Scores>
-            },
-            {
-                path: "isIsogram",
-                element: <Isogram></Isogram>
-            },
-            {
-                path: "Matching_Brackets",
-                element: <Matching_Brackets></Matching_Brackets>
-            },
-            {
-                path: "Phone_Number",
-                element: <Phone_Number></Phone_Number>
-            },
-            {
-                path: "Series",
-                element: <Series></Series>
-            },
-            {
-                path: "Largest Series Product",
-                element: <Largest_Series_Product></Largest_Series_Product>
-            },
-            {
-                path: "Transpose",
-                element: <Transpose></Transpose>
-            },
-            {
-                path: "Rectangles",
-                element: <Rectangles></Rectangles>
-            },
-            {
-                path: "Spiral_Matrix",
-                element: <Spiral_Matrix></Spiral_Matrix>
-            },
-            {
-                path: "Relative_Distance",
-                element: <Relative_Distance></Relative_Distance>
-            },
-            {
-                path: "OCR_Numbers",
-                element: <OCR_Numbers></OCR_Numbers>
-            },
-            {
-                path: "Saddle_Points",
-                element: <Saddle_Points></Saddle_Points>
-            },
-            {
-                path: "Forth",
-                element: <Forth></Forth>
-            },
-            {
-                path: "Food_Chain",
-                element: <Food_Chain></Food_Chain>
-            },
-            {
-                path: "House",
-                element: <House></House>
-            },
-            {
-                path: "ISBN_Verifier",
-                element: <ISBN_Verifier></ISBN_Verifier>
-            },
-            {
-                path: "Pig_Latin",
-                element: <Pig_Latin></Pig_Latin>
-            },
-                {
-                path: "Proverb",
-                element: <Proverb></Proverb>
-            },
-                  {
-                path: "Twelve_Days",
-                element: <Twelve_Days></Twelve_Days>
-            },
-                        {
-                path: "Yacht",
-                element: <Yacht></Yacht>
-            },
-            {
-                path: "Resistor_Color_Trio",
-                element: <Resistor_Color_Trio></Resistor_Color_Trio>
-            },
-              {
-                path: "Dominoes",
-                element: <Dominoes></Dominoes>
-            },
-            {
-                path: "Say",
-                element: <Say></Say>
-            },
-               {
-                path: "Dimonds",
-                element: <Dimonds></Dimonds>
-            },
-               {
-                path: "Rational_Numbers",
-                element: <Rational_Numbers></Rational_Numbers>
-            },
-                   {
-                path: "Sublist",
-                element: <Sublist></Sublist>
-            },
-                            {
-                path: "Binary_Search_Tree",
-                element: <Binary_Search_Tree></Binary_Search_Tree>
-            },
-            {
-                path: "Custom_Set",
-                element: <Custom_Set></Custom_Set>
-            },
-               {
-                path: "Binary_Search",
-                element: <Binary_Search></Binary_Search>
-            },
-                  {
-                path: "Circular_Buffer",
-                element: <Circular_Buffer></Circular_Buffer>
-            },
-                          {
-                path: "Simple_Linked_List",
-                element: <Simple_Linked_List></Simple_Linked_List>
-            },
-            {
-                path: "Word_Search",
-                element: <Word_Search></Word_Search>
-            },
-             {
-                path: "Variable_Length_Quantity",
-                element: <Variable_Length_Quantity></Variable_Length_Quantity>
-            }
-        ]
-    }
-])
+  {
+    path: "/",
+    children: [
+      {
+        index: true,
+        element: <App></App>,
+      },
+      {
+        path: "Camicia",
+        element: <Camicia></Camicia>,
+      },
+      {
+        path: "Meetup",
+        element: <Meetup></Meetup>,
+      },
+      {
+        path: "ETL",
+        element: <Etl></Etl>,
+      },
+      {
+        path: "Hamming",
+        element: <Hamming></Hamming>,
+      },
+      {
+        path: "Raindrops",
+        element: <Raindrops></Raindrops>,
+      },
+      {
+        path: "Nucleotide_count",
+        element: <Nucleotide_count></Nucleotide_count>,
+      },
+      {
+        path: "Scrabble_Score",
+        element: <Scrabble_Score></Scrabble_Score>,
+      },
+      {
+        path: "Word_Count",
+        element: <Word_Count></Word_Count>,
+      },
+      {
+        path: "Bank_Account",
+        element: <Bank_Account></Bank_Account>,
+      },
+      {
+        path: "Difference_of_Squares",
+        element: <Difference_of_Squares></Difference_of_Squares>,
+      },
+      {
+        path: "Perfect_Numbers",
+        element: <Perfect_Numbers></Perfect_Numbers>,
+      },
+      {
+        path: "Luhn",
+        element: <Luhn></Luhn>,
+      },
+      {
+        path: "Prime_Factors",
+        element: <Prime_Factors></Prime_Factors>,
+      },
+      {
+        path: "Grains",
+        element: <Grains></Grains>,
+      },
+      {
+        path: "Palindrome_Products",
+        element: <Palindrome_Products></Palindrome_Products>,
+      },
+      {
+        path: "Anagram",
+        element: <Anagram></Anagram>,
+      },
+      {
+        path: "Acronym",
+        element: <Acronym></Acronym>,
+      },
+      {
+        path: "High_Scores",
+        element: <High_Scores></High_Scores>,
+      },
+      {
+        path: "isIsogram",
+        element: <Isogram></Isogram>,
+      },
+      {
+        path: "Matching_Brackets",
+        element: <Matching_Brackets></Matching_Brackets>,
+      },
+      {
+        path: "Phone_Number",
+        element: <Phone_Number></Phone_Number>,
+      },
+      {
+        path: "Series",
+        element: <Series></Series>,
+      },
+      {
+        path: "Largest Series Product",
+        element: <Largest_Series_Product></Largest_Series_Product>,
+      },
+      {
+        path: "Transpose",
+        element: <Transpose></Transpose>,
+      },
+      {
+        path: "Rectangles",
+        element: <Rectangles></Rectangles>,
+      },
+      {
+        path: "Spiral_Matrix",
+        element: <Spiral_Matrix></Spiral_Matrix>,
+      },
+      {
+        path: "Relative_Distance",
+        element: <Relative_Distance></Relative_Distance>,
+      },
+      {
+        path: "OCR_Numbers",
+        element: <OCR_Numbers></OCR_Numbers>,
+      },
+      {
+        path: "Saddle_Points",
+        element: <Saddle_Points></Saddle_Points>,
+      },
+      {
+        path: "Forth",
+        element: <Forth></Forth>,
+      },
+      {
+        path: "Food_Chain",
+        element: <Food_Chain></Food_Chain>,
+      },
+      {
+        path: "House",
+        element: <House></House>,
+      },
+      {
+        path: "ISBN_Verifier",
+        element: <ISBN_Verifier></ISBN_Verifier>,
+      },
+      {
+        path: "Pig_Latin",
+        element: <Pig_Latin></Pig_Latin>,
+      },
+      {
+        path: "Proverb",
+        element: <Proverb></Proverb>,
+      },
+      {
+        path: "Twelve_Days",
+        element: <Twelve_Days></Twelve_Days>,
+      },
+      {
+        path: "Yacht",
+        element: <Yacht></Yacht>,
+      },
+      {
+        path: "Resistor_Color_Trio",
+        element: <Resistor_Color_Trio></Resistor_Color_Trio>,
+      },
+      {
+        path: "Dominoes",
+        element: <Dominoes></Dominoes>,
+      },
+      {
+        path: "Say",
+        element: <Say></Say>,
+      },
+      {
+        path: "Dimonds",
+        element: <Dimonds></Dimonds>,
+      },
+      {
+        path: "Rational_Numbers",
+        element: <Rational_Numbers></Rational_Numbers>,
+      },
+      {
+        path: "Sublist",
+        element: <Sublist></Sublist>,
+      },
+      {
+        path: "Binary_Search_Tree",
+        element: <Binary_Search_Tree></Binary_Search_Tree>,
+      },
+      {
+        path: "Custom_Set",
+        element: <Custom_Set></Custom_Set>,
+      },
+      {
+        path: "Binary_Search",
+        element: <Binary_Search></Binary_Search>,
+      },
+      {
+        path: "Circular_Buffer",
+        element: <Circular_Buffer></Circular_Buffer>,
+      },
+      {
+        path: "Simple_Linked_List",
+        element: <Simple_Linked_List></Simple_Linked_List>,
+      },
+      {
+        path: "Word_Search",
+        element: <Word_Search></Word_Search>,
+      },
+      {
+        path: "Variable_Length_Quantity",
+        element: <Variable_Length_Quantity></Variable_Length_Quantity>,
+      },
+      {
+        path: "Alphametics",
+        element: <Alphametics></Alphametics>,
+      },
+      {
+        path: "test",
+        element: <Test></Test>,
+      },
+    ],
+  },
+]);
 export default routs;
